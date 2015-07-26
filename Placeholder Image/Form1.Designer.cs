@@ -48,7 +48,7 @@
             this.l_tcolour = new System.Windows.Forms.Label();
             this.tb_tcolour = new System.Windows.Forms.TextBox();
             this.bt_tcolour = new System.Windows.Forms.Button();
-            this.cb_bw = new System.Windows.Forms.CheckBox();
+            this.cb_gray = new System.Windows.Forms.CheckBox();
             this.gb_service.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_width)).BeginInit();
@@ -260,23 +260,23 @@
             this.bt_tcolour.UseVisualStyleBackColor = true;
             this.bt_tcolour.Click += new System.EventHandler(this.bt_tcolour_Click);
             // 
-            // cb_bw
+            // cb_gray
             // 
-            this.cb_bw.AutoSize = true;
-            this.cb_bw.Enabled = false;
-            this.cb_bw.Location = new System.Drawing.Point(12, 248);
-            this.cb_bw.Name = "cb_bw";
-            this.cb_bw.Size = new System.Drawing.Size(49, 17);
-            this.cb_bw.TabIndex = 8;
-            this.cb_bw.Text = "B/W";
-            this.cb_bw.UseVisualStyleBackColor = true;
+            this.cb_gray.AutoSize = true;
+            this.cb_gray.Enabled = false;
+            this.cb_gray.Location = new System.Drawing.Point(12, 248);
+            this.cb_gray.Name = "cb_gray";
+            this.cb_gray.Size = new System.Drawing.Size(73, 17);
+            this.cb_gray.TabIndex = 8;
+            this.cb_gray.Text = "Grayscale";
+            this.cb_gray.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 311);
-            this.Controls.Add(this.cb_bw);
+            this.Controls.Add(this.cb_gray);
             this.Controls.Add(this.bt_tcolour);
             this.Controls.Add(this.bt_bgcolour);
             this.Controls.Add(this.bt_save);
@@ -328,7 +328,7 @@
         private System.Windows.Forms.Label l_tcolour;
         private System.Windows.Forms.TextBox tb_tcolour;
         private System.Windows.Forms.Button bt_tcolour;
-        private System.Windows.Forms.CheckBox cb_bw;
+        private System.Windows.Forms.CheckBox cb_gray;
     }
 }
 

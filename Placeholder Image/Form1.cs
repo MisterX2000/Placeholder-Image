@@ -33,7 +33,7 @@ namespace Placeholder_Image
             l_tcolour.Enabled = true;
             tb_tcolour.Enabled = true;
             bt_tcolour.Enabled = true;
-            cb_bw.Enabled = false;
+            cb_gray.Enabled = false;
         }
 
         private void rb_placekitten_CheckedChanged(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace Placeholder_Image
             l_tcolour.Enabled = false;
             tb_tcolour.Enabled = false;
             bt_tcolour.Enabled = false;
-            cb_bw.Enabled = true;
+            cb_gray.Enabled = true;
         }
 
         private void bt_go_Click(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace Placeholder_Image
             }
             else if (rb_placekitten.Checked == true)
             {
-                if (cb_bw.Checked == true)
+                if (cb_gray.Checked == true)
                 {
                     try
                     {
