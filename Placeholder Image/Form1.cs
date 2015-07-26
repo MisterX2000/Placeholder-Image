@@ -72,7 +72,11 @@ namespace Placeholder_Image
         private void bt_save_Click(object sender, EventArgs e)
         {
             saveFileDialog1.ShowDialog();
-            pb_image.Image.Save(saveFileDialog1.FileName, ImageFormat.Png);
+            try
+            {
+                pb_image.Image.Save(saveFileDialog1.FileName, ImageFormat.Png);
+            }
+            catch { }
 
         }
 
