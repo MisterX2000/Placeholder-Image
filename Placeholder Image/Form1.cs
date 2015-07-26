@@ -33,6 +33,7 @@ namespace Placeholder_Image
             l_tcolour.Enabled = true;
             tb_tcolour.Enabled = true;
             bt_tcolour.Enabled = true;
+            cb_bw.Enabled = false;
         }
 
         private void rb_placekitten_CheckedChanged(object sender, EventArgs e)
@@ -45,6 +46,7 @@ namespace Placeholder_Image
             l_tcolour.Enabled = false;
             tb_tcolour.Enabled = false;
             bt_tcolour.Enabled = false;
+            cb_bw.Enabled = true;
         }
 
         private void bt_go_Click(object sender, EventArgs e)
@@ -59,15 +61,31 @@ namespace Placeholder_Image
             }
             else if (rb_placekitten.Checked == true)
             {
-                try
+                if (cb_bw.Checked == true)
                 {
-                    pb_image.Load("http://placekitten.com/g/" + tb_width.Value + "/" + tb_height.Value);
-                    bt_save.Enabled = true;
+                    try
+                    {
+                        pb_image.Load("http://placekitten.com/g/" + tb_width.Value + "/" + tb_height.Value);
+                        bt_save.Enabled = true;
+                    }
+                    catch
+                    {
+                        MessageBox.Show("404\nImage not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        bt_save.Enabled = false;
+                    }
                 }
-                catch
+                else
                 {
-                    MessageBox.Show("404\nImage not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    bt_save.Enabled = false;
+                    try
+                    {
+                        pb_image.Load("http://placekitten.com/" + tb_width.Value + "/" + tb_height.Value);
+                        bt_save.Enabled = true;
+                    }
+                    catch
+                    {
+                        MessageBox.Show("404\nImage not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        bt_save.Enabled = false;
+                    }
                 }
             }
         }
