@@ -27,12 +27,24 @@ namespace Placeholder_Image
         {
             l_text.Enabled = true;
             tb_text.Enabled = true;
+            l_bgcolour.Enabled = true;
+            tb_bgcolour.Enabled = true;
+            bt_bgcolour.Enabled = true;
+            l_tcolour.Enabled = true;
+            tb_tcolour.Enabled = true;
+            bt_tcolour.Enabled = true;
         }
 
         private void rb_placekitten_CheckedChanged(object sender, EventArgs e)
         {
             l_text.Enabled = false;
             tb_text.Enabled = false;
+            l_bgcolour.Enabled = false;
+            tb_bgcolour.Enabled = false;
+            bt_bgcolour.Enabled = false;
+            l_tcolour.Enabled = false;
+            tb_tcolour.Enabled = false;
+            bt_tcolour.Enabled = false;
         }
 
         private void bt_go_Click(object sender, EventArgs e)

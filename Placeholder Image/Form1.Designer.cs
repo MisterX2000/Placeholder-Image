@@ -279,6 +279,7 @@
             this.Controls.Add(this.l_height);
             this.Controls.Add(this.l_width);
             this.Controls.Add(this.gb_service);
+            this.MinimumSize = new System.Drawing.Size(500, 350);
             this.Name = "Form1";
             this.Text = "Placeholder Image";
             this.gb_service.ResumeLayout(false);
