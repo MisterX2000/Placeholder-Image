@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.gb_service = new System.Windows.Forms.GroupBox();
-            this.rb_placeholdit = new System.Windows.Forms.RadioButton();
             this.rb_placekitten = new System.Windows.Forms.RadioButton();
+            this.rb_placeholdit = new System.Windows.Forms.RadioButton();
             this.l_width = new System.Windows.Forms.Label();
             this.l_height = new System.Windows.Forms.Label();
             this.l_text = new System.Windows.Forms.Label();
@@ -42,6 +42,12 @@
             this.tb_height = new System.Windows.Forms.NumericUpDown();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.bt_save = new System.Windows.Forms.Button();
+            this.l_bgcolour = new System.Windows.Forms.Label();
+            this.tb_bgcolour = new System.Windows.Forms.TextBox();
+            this.bt_bgcolour = new System.Windows.Forms.Button();
+            this.l_tcolour = new System.Windows.Forms.Label();
+            this.tb_tcolour = new System.Windows.Forms.TextBox();
+            this.bt_tcolour = new System.Windows.Forms.Button();
             this.gb_service.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_width)).BeginInit();
@@ -59,18 +65,6 @@
             this.gb_service.TabStop = false;
             this.gb_service.Text = "Service";
             // 
-            // rb_placeholdit
-            // 
-            this.rb_placeholdit.AutoSize = true;
-            this.rb_placeholdit.Location = new System.Drawing.Point(6, 19);
-            this.rb_placeholdit.Name = "rb_placeholdit";
-            this.rb_placeholdit.Size = new System.Drawing.Size(79, 17);
-            this.rb_placeholdit.TabIndex = 0;
-            this.rb_placeholdit.TabStop = true;
-            this.rb_placeholdit.Text = "placehold.it";
-            this.rb_placeholdit.UseVisualStyleBackColor = true;
-            this.rb_placeholdit.CheckedChanged += new System.EventHandler(this.rb_placeholdit_CheckedChanged);
-            // 
             // rb_placekitten
             // 
             this.rb_placekitten.AutoSize = true;
@@ -82,6 +76,18 @@
             this.rb_placekitten.Text = "placekitten";
             this.rb_placekitten.UseVisualStyleBackColor = true;
             this.rb_placekitten.CheckedChanged += new System.EventHandler(this.rb_placekitten_CheckedChanged);
+            // 
+            // rb_placeholdit
+            // 
+            this.rb_placeholdit.AutoSize = true;
+            this.rb_placeholdit.Location = new System.Drawing.Point(6, 19);
+            this.rb_placeholdit.Name = "rb_placeholdit";
+            this.rb_placeholdit.Size = new System.Drawing.Size(79, 17);
+            this.rb_placeholdit.TabIndex = 0;
+            this.rb_placeholdit.TabStop = true;
+            this.rb_placeholdit.Text = "placehold.it";
+            this.rb_placeholdit.UseVisualStyleBackColor = true;
+            this.rb_placeholdit.CheckedChanged += new System.EventHandler(this.rb_placeholdit_CheckedChanged);
             // 
             // l_width
             // 
@@ -125,13 +131,13 @@
             this.pb_image.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_image.Location = new System.Drawing.Point(218, 12);
             this.pb_image.Name = "pb_image";
-            this.pb_image.Size = new System.Drawing.Size(254, 237);
+            this.pb_image.Size = new System.Drawing.Size(254, 287);
             this.pb_image.TabIndex = 3;
             this.pb_image.TabStop = false;
             // 
             // bt_go
             // 
-            this.bt_go.Location = new System.Drawing.Point(12, 226);
+            this.bt_go.Location = new System.Drawing.Point(12, 276);
             this.bt_go.Name = "bt_go";
             this.bt_go.Size = new System.Drawing.Size(90, 23);
             this.bt_go.TabIndex = 4;
@@ -192,7 +198,7 @@
             // bt_save
             // 
             this.bt_save.Enabled = false;
-            this.bt_save.Location = new System.Drawing.Point(122, 226);
+            this.bt_save.Location = new System.Drawing.Point(122, 276);
             this.bt_save.Name = "bt_save";
             this.bt_save.Size = new System.Drawing.Size(90, 23);
             this.bt_save.TabIndex = 6;
@@ -200,16 +206,74 @@
             this.bt_save.UseVisualStyleBackColor = true;
             this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
             // 
+            // l_bgcolour
+            // 
+            this.l_bgcolour.AutoSize = true;
+            this.l_bgcolour.Location = new System.Drawing.Point(12, 199);
+            this.l_bgcolour.Name = "l_bgcolour";
+            this.l_bgcolour.Size = new System.Drawing.Size(58, 13);
+            this.l_bgcolour.TabIndex = 1;
+            this.l_bgcolour.Text = "BG Colour:";
+            // 
+            // tb_bgcolour
+            // 
+            this.tb_bgcolour.Location = new System.Drawing.Point(76, 196);
+            this.tb_bgcolour.Name = "tb_bgcolour";
+            this.tb_bgcolour.Size = new System.Drawing.Size(110, 20);
+            this.tb_bgcolour.TabIndex = 2;
+            // 
+            // bt_bgcolour
+            // 
+            this.bt_bgcolour.Location = new System.Drawing.Point(192, 195);
+            this.bt_bgcolour.Name = "bt_bgcolour";
+            this.bt_bgcolour.Size = new System.Drawing.Size(20, 20);
+            this.bt_bgcolour.TabIndex = 7;
+            this.bt_bgcolour.Text = "D";
+            this.bt_bgcolour.UseVisualStyleBackColor = true;
+            this.bt_bgcolour.Click += new System.EventHandler(this.bt_bgcolour_Click);
+            // 
+            // l_tcolour
+            // 
+            this.l_tcolour.AutoSize = true;
+            this.l_tcolour.Location = new System.Drawing.Point(12, 225);
+            this.l_tcolour.Name = "l_tcolour";
+            this.l_tcolour.Size = new System.Drawing.Size(50, 13);
+            this.l_tcolour.TabIndex = 1;
+            this.l_tcolour.Text = "T Colour:";
+            // 
+            // tb_tcolour
+            // 
+            this.tb_tcolour.Location = new System.Drawing.Point(76, 222);
+            this.tb_tcolour.Name = "tb_tcolour";
+            this.tb_tcolour.Size = new System.Drawing.Size(110, 20);
+            this.tb_tcolour.TabIndex = 2;
+            // 
+            // bt_tcolour
+            // 
+            this.bt_tcolour.Location = new System.Drawing.Point(192, 221);
+            this.bt_tcolour.Name = "bt_tcolour";
+            this.bt_tcolour.Size = new System.Drawing.Size(20, 20);
+            this.bt_tcolour.TabIndex = 7;
+            this.bt_tcolour.Text = "D";
+            this.bt_tcolour.UseVisualStyleBackColor = true;
+            this.bt_tcolour.Click += new System.EventHandler(this.bt_tcolour_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 261);
+            this.ClientSize = new System.Drawing.Size(484, 311);
+            this.Controls.Add(this.bt_tcolour);
+            this.Controls.Add(this.bt_bgcolour);
             this.Controls.Add(this.bt_save);
             this.Controls.Add(this.tb_height);
             this.Controls.Add(this.tb_width);
             this.Controls.Add(this.bt_go);
             this.Controls.Add(this.pb_image);
+            this.Controls.Add(this.tb_tcolour);
+            this.Controls.Add(this.l_tcolour);
+            this.Controls.Add(this.tb_bgcolour);
+            this.Controls.Add(this.l_bgcolour);
             this.Controls.Add(this.tb_text);
             this.Controls.Add(this.l_text);
             this.Controls.Add(this.l_height);
@@ -243,6 +307,12 @@
         private System.Windows.Forms.NumericUpDown tb_height;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button bt_save;
+        private System.Windows.Forms.Label l_bgcolour;
+        private System.Windows.Forms.TextBox tb_bgcolour;
+        private System.Windows.Forms.Button bt_bgcolour;
+        private System.Windows.Forms.Label l_tcolour;
+        private System.Windows.Forms.TextBox tb_tcolour;
+        private System.Windows.Forms.Button bt_tcolour;
     }
 }
 
