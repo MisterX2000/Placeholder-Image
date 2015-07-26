@@ -72,7 +72,6 @@
             this.rb_placekitten.Name = "rb_placekitten";
             this.rb_placekitten.Size = new System.Drawing.Size(77, 17);
             this.rb_placekitten.TabIndex = 1;
-            this.rb_placekitten.TabStop = true;
             this.rb_placekitten.Text = "placekitten";
             this.rb_placekitten.UseVisualStyleBackColor = true;
             this.rb_placekitten.CheckedChanged += new System.EventHandler(this.rb_placekitten_CheckedChanged);
@@ -80,6 +79,7 @@
             // rb_placeholdit
             // 
             this.rb_placeholdit.AutoSize = true;
+            this.rb_placeholdit.Checked = true;
             this.rb_placeholdit.Location = new System.Drawing.Point(6, 19);
             this.rb_placeholdit.Name = "rb_placeholdit";
             this.rb_placeholdit.Size = new System.Drawing.Size(79, 17);
