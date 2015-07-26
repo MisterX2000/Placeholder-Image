@@ -132,6 +132,7 @@
             this.pb_image.Location = new System.Drawing.Point(218, 12);
             this.pb_image.Name = "pb_image";
             this.pb_image.Size = new System.Drawing.Size(254, 287);
+            this.pb_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pb_image.TabIndex = 3;
             this.pb_image.TabStop = false;
             // 
@@ -162,7 +163,7 @@
             this.tb_width.Size = new System.Drawing.Size(153, 20);
             this.tb_width.TabIndex = 5;
             this.tb_width.Value = new decimal(new int[] {
-            300,
+            252,
             0,
             0,
             0});
@@ -184,7 +185,7 @@
             this.tb_height.Size = new System.Drawing.Size(153, 20);
             this.tb_height.TabIndex = 5;
             this.tb_height.Value = new decimal(new int[] {
-            300,
+            285,
             0,
             0,
             0});

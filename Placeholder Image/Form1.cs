@@ -49,6 +49,9 @@ namespace Placeholder_Image
 
         private void bt_go_Click(object sender, EventArgs e)
         {
+            this.Width = this.MinimumSize.Width + (int)tb_width.Value - 252;
+            this.Height = this.MinimumSize.Height + (int)tb_height.Value - 285;
+
             if (rb_placeholdit.Checked == true)
             {
                 pb_image.Load("http://placehold.it/" + tb_width.Value + "x" + tb_height.Value + "/" + bgcolour + "/" + tcolour + "?text=" + tb_text.Text);
