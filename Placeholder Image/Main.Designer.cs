@@ -51,6 +51,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tp_placeholdit = new System.Windows.Forms.TabPage();
             this.tp_placekitten = new System.Windows.Forms.TabPage();
+            this.bt_reset = new System.Windows.Forms.Button();
             this.gb_size.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_height)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_width)).BeginInit();
@@ -169,7 +170,7 @@
             this.bt_go.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.bt_go.Location = new System.Drawing.Point(12, 276);
             this.bt_go.Name = "bt_go";
-            this.bt_go.Size = new System.Drawing.Size(90, 23);
+            this.bt_go.Size = new System.Drawing.Size(58, 23);
             this.bt_go.TabIndex = 4;
             this.bt_go.Text = "Go!";
             this.bt_go.UseVisualStyleBackColor = true;
@@ -186,9 +187,9 @@
             // 
             this.bt_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.bt_save.Enabled = false;
-            this.bt_save.Location = new System.Drawing.Point(122, 276);
+            this.bt_save.Location = new System.Drawing.Point(142, 276);
             this.bt_save.Name = "bt_save";
-            this.bt_save.Size = new System.Drawing.Size(90, 23);
+            this.bt_save.Size = new System.Drawing.Size(60, 23);
             this.bt_save.TabIndex = 6;
             this.bt_save.Text = "Save";
             this.bt_save.UseVisualStyleBackColor = true;
@@ -296,12 +297,24 @@
             this.tp_placekitten.Text = "placekitten";
             this.tp_placekitten.UseVisualStyleBackColor = true;
             // 
+            // bt_reset
+            // 
+            this.bt_reset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.bt_reset.Location = new System.Drawing.Point(76, 276);
+            this.bt_reset.Name = "bt_reset";
+            this.bt_reset.Size = new System.Drawing.Size(60, 23);
+            this.bt_reset.TabIndex = 10;
+            this.bt_reset.Text = "Reset";
+            this.bt_reset.UseVisualStyleBackColor = true;
+            this.bt_reset.Click += new System.EventHandler(this.bt_reset_Click);
+            // 
             // Main
             // 
             this.AcceptButton = this.bt_go;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 311);
+            this.Controls.Add(this.bt_reset);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.bt_save);
             this.Controls.Add(this.bt_go);
@@ -349,6 +362,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tp_placeholdit;
         private System.Windows.Forms.TabPage tp_placekitten;
+        private System.Windows.Forms.Button bt_reset;
     }
 }
 

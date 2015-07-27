@@ -109,5 +109,17 @@ namespace Placeholder_Image
                 }
             }
         }
+
+        private void bt_reset_Click(object sender, EventArgs e)
+        {
+            tb_bgcolour.Text = "";
+            tb_tcolour.Text = "";
+            tb_text.Text = "";
+            tb_width.Value = 252;
+            tb_height.Value = 285;
+            cb_gray.Checked = false;
+            tabControl1.SelectedTab = tp_placeholdit;
+            magic();
+        }
     }
 }
