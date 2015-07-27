@@ -1,6 +1,6 @@
 ﻿namespace Placeholder_Image
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.gb_size = new System.Windows.Forms.GroupBox();
             this.tb_height = new System.Windows.Forms.NumericUpDown();
             this.l_width = new System.Windows.Forms.Label();
@@ -293,7 +294,7 @@
             this.tp_placekitten.Text = "placekitten";
             this.tp_placekitten.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Main
             // 
             this.AcceptButton = this.bt_go;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,8 +305,9 @@
             this.Controls.Add(this.bt_go);
             this.Controls.Add(this.pb_image);
             this.Controls.Add(this.gb_size);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(500, 350);
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "Placeholder Image";
             this.gb_size.ResumeLayout(false);
             this.gb_size.PerformLayout();
