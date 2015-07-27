@@ -61,7 +61,7 @@ namespace Placeholder_Image
         {
             if (tabControl1.SelectedTab == tp_placeholdit)
             {
-                tabControl1.Size = new Size (200, 110);
+                tabControl1.Size = new Size(200, 110);
             }
             else if (tabControl1.SelectedTab == tp_placekitten)
             {
@@ -71,7 +71,7 @@ namespace Placeholder_Image
 
         private void magic()
         {
-                        this.Width = this.MinimumSize.Width + (int)tb_width.Value - 252;
+            this.Width = this.MinimumSize.Width + (int)tb_width.Value - 252;
             this.Height = this.MinimumSize.Height + (int)tb_height.Value - 285;
 
             if (tabControl1.SelectedTab == tp_placeholdit)
