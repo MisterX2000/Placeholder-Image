@@ -52,6 +52,7 @@
             this.tp_placeholdit = new System.Windows.Forms.TabPage();
             this.tp_placekitten = new System.Windows.Forms.TabPage();
             this.bt_reset = new System.Windows.Forms.Button();
+            this.bt_about = new System.Windows.Forms.Button();
             this.gb_size.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_height)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_width)).BeginInit();
@@ -164,6 +165,8 @@
             this.pb_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pb_image.TabIndex = 3;
             this.pb_image.TabStop = false;
+            this.pb_image.MouseEnter += new System.EventHandler(this.pb_image_MouseEnter);
+            this.pb_image.MouseLeave += new System.EventHandler(this.pb_image_MouseLeave);
             // 
             // bt_go
             // 
@@ -308,12 +311,24 @@
             this.bt_reset.UseVisualStyleBackColor = true;
             this.bt_reset.Click += new System.EventHandler(this.bt_reset_Click);
             // 
+            // bt_about
+            // 
+            this.bt_about.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_about.Location = new System.Drawing.Point(451, 13);
+            this.bt_about.Name = "bt_about";
+            this.bt_about.Size = new System.Drawing.Size(20, 20);
+            this.bt_about.TabIndex = 11;
+            this.bt_about.Text = "?";
+            this.bt_about.UseVisualStyleBackColor = true;
+            this.bt_about.Click += new System.EventHandler(this.bt_about_Click);
+            // 
             // Main
             // 
             this.AcceptButton = this.bt_go;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 311);
+            this.Controls.Add(this.bt_about);
             this.Controls.Add(this.bt_reset);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.bt_save);
@@ -363,6 +378,7 @@
         private System.Windows.Forms.TabPage tp_placeholdit;
         private System.Windows.Forms.TabPage tp_placekitten;
         private System.Windows.Forms.Button bt_reset;
+        private System.Windows.Forms.Button bt_about;
     }
 }
 

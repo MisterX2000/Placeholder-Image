@@ -121,5 +121,21 @@ namespace Placeholder_Image
             tabControl1.SelectedTab = tp_placeholdit;
             magic();
         }
+
+        private void pb_image_MouseEnter(object sender, EventArgs e)
+        {
+            //bt_about.Visible = true;
+        }
+
+        private void pb_image_MouseLeave(object sender, EventArgs e)
+        {
+            //bt_about.Visible = false;
+        }
+
+        private void bt_about_Click(object sender, EventArgs e)
+        {
+            About AboutWindow = new About();
+            AboutWindow.Show();
+        }
     }
 }
