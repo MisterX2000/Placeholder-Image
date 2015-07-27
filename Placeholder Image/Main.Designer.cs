@@ -166,6 +166,7 @@
             // 
             // bt_go
             // 
+            this.bt_go.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.bt_go.Location = new System.Drawing.Point(12, 276);
             this.bt_go.Name = "bt_go";
             this.bt_go.Size = new System.Drawing.Size(90, 23);
@@ -183,6 +184,7 @@
             // 
             // bt_save
             // 
+            this.bt_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.bt_save.Enabled = false;
             this.bt_save.Location = new System.Drawing.Point(122, 276);
             this.bt_save.Name = "bt_save";
