@@ -176,6 +176,7 @@
             // saveFileDialog1
             // 
             this.saveFileDialog1.DefaultExt = "png";
+            this.saveFileDialog1.FileName = "Placeholder";
             this.saveFileDialog1.Filter = "Portable Network Graphics|*.png";
             this.saveFileDialog1.Title = "Save an Image File";
             // 
