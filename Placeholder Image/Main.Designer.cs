@@ -53,6 +53,7 @@
             this.tp_placekitten = new System.Windows.Forms.TabPage();
             this.bt_reset = new System.Windows.Forms.Button();
             this.bt_about = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.gb_size.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tb_height)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_width)).BeginInit();
@@ -267,12 +268,13 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 92);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(200, 110);
+            this.tabControl1.Size = new System.Drawing.Size(200, 125);
             this.tabControl1.TabIndex = 9;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tp_placeholdit
             // 
+            this.tp_placeholdit.Controls.Add(this.label1);
             this.tp_placeholdit.Controls.Add(this.l_text);
             this.tp_placeholdit.Controls.Add(this.tb_tcolour);
             this.tp_placeholdit.Controls.Add(this.tb_text);
@@ -284,7 +286,7 @@
             this.tp_placeholdit.Location = new System.Drawing.Point(4, 22);
             this.tp_placeholdit.Name = "tp_placeholdit";
             this.tp_placeholdit.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_placeholdit.Size = new System.Drawing.Size(192, 84);
+            this.tp_placeholdit.Size = new System.Drawing.Size(192, 99);
             this.tp_placeholdit.TabIndex = 0;
             this.tp_placeholdit.Text = "placehold.it";
             this.tp_placeholdit.UseVisualStyleBackColor = true;
@@ -321,6 +323,16 @@
             this.bt_about.Text = "?";
             this.bt_about.UseVisualStyleBackColor = true;
             this.bt_about.Click += new System.EventHandler(this.bt_about_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(6, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Colours must be in Hex format";
             // 
             // Main
             // 
@@ -379,6 +391,7 @@
         private System.Windows.Forms.TabPage tp_placekitten;
         private System.Windows.Forms.Button bt_reset;
         private System.Windows.Forms.Button bt_about;
+        private System.Windows.Forms.Label label1;
     }
 }
 

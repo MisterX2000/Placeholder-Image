@@ -61,7 +61,7 @@ namespace Placeholder_Image
         {
             if (tabControl1.SelectedTab == tp_placeholdit)
             {
-                tabControl1.Size = new Size(200, 110);
+                tabControl1.Size = new Size(200, 125);
             }
             else if (tabControl1.SelectedTab == tp_placekitten)
             {
@@ -81,7 +81,7 @@ namespace Placeholder_Image
             }
             else if (tabControl1.SelectedTab == tp_placekitten)
             {
-                if (cb_gray.Checked == true)
+                if (cb_gray.Checked)
                 {
                     try
                     {
