@@ -74,7 +74,7 @@
             this.l_version.Name = "l_version";
             this.l_version.Size = new System.Drawing.Size(28, 13);
             this.l_version.TabIndex = 3;
-            this.l_version.Text = "v1.1";
+            this.l_version.Text = "v1.2";
             // 
             // About
             // 
