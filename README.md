@@ -4,4 +4,4 @@ Placeholder Image is a simple Program, that lets you view and save Placeholder f
 
  - placehold.it
  - placekitten
- - and more to come (If you have ideas, please post them in the Issues tab.)
+ - and more to come (If you have ideas, please post them in the [Issues tab](https://github.com/MisterX2000/Placeholder-Image/issues).)
